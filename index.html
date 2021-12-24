@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(window).on('load', function () {
+            let $preloader = $('#p_prldr'),
+                $svg_anm = $preloader.find('TMNT.mp4');
+            $svg_anm.fadeOut();
+            $preloader.delay(60000).fadeOut('slow');
+        });
+    </script>
+
+    <link rel="stylesheet" href="code/css/style.css">
+</head>
+
+<body>
+
+    <!-- <div id="p_prldr">
+        <div class="contpre">
+            <video class="video" autoplay="" controls="">
+                <source src="file:///C:/Users/79132_3qc24am/Downloads/TMNT%202003%20Intro%20Season%204%201080p.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="enemy-stats">
+            <ul>
+                <li class="enemy-name" id="enemy-name"></li>
+                <li class="enemy-damage" id="enemy-damage"></li>
+                <li class="enemy-armor" id="enemy-armor"></li>
+                <li class="hero-health" id="enemy-health"></li>
+            </ul>
+        </div>
+        <div class="hero-stats">
+            <ul>
+                <li class="hero-name" id="hero-name"></li>
+                <li class="hero-damage" id="hero-damage"></li>
+                <li class="hero-armor" id="hero-armor"></li>
+                <li class="hero-health" id="hero-health"></li>
+            </ul>
+
+            <div class="controls">
+                <button id="btn1">Атака</button>
+            </div>
+
+        </div>
+
+        <div class="hero-container" id="hero"></div>
+        <div id="damage-hero-container"></div>
+        <div class="enemy-container" id="enemy"></div>
+        <div id="damage-enemy-container"></div>
+
+    </div>
+</body>
+
+<script src="code/js/main.js"></script>
+
+</html>
